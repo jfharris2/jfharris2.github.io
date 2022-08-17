@@ -43,16 +43,16 @@ function TempAndDetails({weather: {
     space-x-2 text-white text-sm py-3">
       <UilSun />
       <p className="font-light">
-        Rise:{" "}
+        Rise: 6:44 AM
         <span className="font-medium ml-1">
-        {`${formatToLocalTime(sunrise, timezone, "hh:mm a")}`}
+
         </span>
       </p>
       <p className="font-light">|</p>
       <UilSunset />
       <p className="font-light">
-        Set:{" "}<span className="font-medium ml-1">
-        {`${formatToLocalTime(sunset, timezone, "hh:mm a")}`}
+        Set: 8:13 PM<span className="font-medium ml-1">
+        
         </span>
       </p>
       <p className="font-light">|</p>
@@ -76,5 +76,5 @@ function TempAndDetails({weather: {
 
 export default TempAndDetails;
 
-//
-//
+//        {`${formatToLocalTime(sunrise, timezone, "hh:mm a")}`}
+//        {`${formatToLocalTime(sunset, timezone, "hh:mm a")}`}

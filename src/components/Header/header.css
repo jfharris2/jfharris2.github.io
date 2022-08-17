@@ -1,11 +1,18 @@
 .Header {
     box-sizing: border-box;
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: baseline;
     padding: 1em;
     margin-bottom: 0;
-    background-color: rgb(192, 45, 26);
+    background-image: linear-gradient(to bottom left, black, rgb(67, 59, 59));
     color: #fff;
+    text-align: justify;
+}
+
+.h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    flex-direction: row;
 }

@@ -72,4 +72,4 @@ function Inputs({ setQuery, units, setUnits }) {
   )
 }
 
-export default Inputs
+export default Inputs;

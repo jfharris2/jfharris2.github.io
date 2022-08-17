@@ -5,12 +5,11 @@ import { Component } from "react";
 const  HEIGHT = 10;
 const  WIDTH  = 10;
 
-// mapping keycode  for changing direction
 const LEFT  = 37; 
 const UP    = 38;
 const RIGHT = 39; 
 const DOWN  = 40;
-const STOP  = 32; /* [space] used for pause */
+const STOP  = 32;
 
 const getRandom = () => {
     return  { 
@@ -60,7 +59,7 @@ class Snake extends Component {
             case DOWN:  head.x += 1;  break;
             default: return;
         }
-        /* keep the value within range of 0 to HEIGHT */
+
         head.x += HEIGHT * ((head.x<0)-(head.x>=HEIGHT));
         head.y += WIDTH * ((head.y<0)-(head.y>=WIDTH));
         
@@ -135,10 +134,10 @@ class Snake extends Component {
         const displayRows = this.state.rows.map((row, i) => row.map((value, j) =>  <div name={`${i}=${j}`} className={value} />))
         return (
             <div className="a">
-                <h1> Snake  v0.1.1</h1>
+                <h1><strong>Snake</strong></h1>
                 <ul>
-                    <li>press "space" to pause the game.</li>
-                    <li>press "arrow keys" to change direction/ unpause.</li>
+                    <li>Press an arrow key to change direction or start the game.</li>
+                    <li>Press spacebar to pause the game.</li>
                 </ul>
                 <div className="snake-container">
                     <div className="grid">{displayRows}</div>

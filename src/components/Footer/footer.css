@@ -1,11 +1,22 @@
 .Footer {
-    background-color: rgb(192, 45, 26);
-    color: #fff;
-    font-size: 10;
+    background-image: linear-gradient(to bottom right, rgb(67, 59, 59), black);
+    color: white;
     text-align: center;
+    font-size: 10;
     position: bottom;
     width: 100%;
     margin-top: 0;
+    padding: 1em;
     box-sizing: border-box;
     height: auto;
+}
+
+.Footer ul {
+    justify-items: center;
+    text-align: center;
+}
+
+.Footer li {
+    text-align: right;
+    flex-direction: row;
 }

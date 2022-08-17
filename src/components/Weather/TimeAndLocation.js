@@ -18,4 +18,4 @@ function TimeAndLocation({ weather: { dt, timezone, name, country } }) {
   )
 }
 
-export default TimeAndLocation
+export default TimeAndLocation;

@@ -4,7 +4,9 @@ import "./header.css";
 function Header() {
   return (
     <div>
-      <h1>Placeholder text!!!</h1>
+      <h1>
+        <span>Weather or Knot</span>
+      </h1>
     </div>
   )
 }
