@@ -46,3 +46,13 @@ html, body {
   background: url(./assets/screen.png);
   background-size: cover;
 }
+
+@media screen and (max-width: 640px) {
+  .reveal-top {
+    display: none;
+  }
+
+  .snake-reveal-content {
+    display: none;
+  }
+}
