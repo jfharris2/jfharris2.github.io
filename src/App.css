@@ -52,7 +52,7 @@ html, body {
     display: none;
   }
 
-  .snake-reveal-content {
+  .snake-reveal-wrapper {
     display: none;
   }
 }
